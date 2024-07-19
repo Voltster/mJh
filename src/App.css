@@ -1,0 +1,114 @@
+nav ul li .navLink,
+nav ul li .navLink:after {
+  transition: all .5s;
+}
+
+nav ul li .navLink {
+  position: relative;
+}
+
+nav ul li .navLink:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  color: transparent;
+  background: #232323;
+  height: 1.2px;
+}
+
+nav ul li .navLink:hover:after {
+  width: 100%;
+}
+
+.primaryButton {
+  background-image: linear-gradient(to right,
+      #db3700 0%,
+      #fe5628 51%,
+      #db0033 100%);
+  transition: 0.5s;
+  background-size: 200% auto;
+}
+
+.primaryButton:hover {
+  background-position: right center;
+  -webkit-box-shadow: 0px 0px 40px 2px rgba(255, 77, 46, 0.4);
+  -moz-box-shadow: 0px 0px 40px 2px rgba(255, 77, 46, 0.4);
+  box-shadow: 0px 0px 40px 2px rgba(255, 77, 46, 0.4);
+}
+
+
+
+/* Secondary button */
+.secondaryButton::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(#232323, #2d2d2d);
+  left: 0;
+  top: -100%;
+  border-radius: 100%;
+  transition: all 0.2s ease-in-out;
+  z-index: -10;
+}
+
+.secondaryButton:hover::after {
+  top: 0;
+  border-radius: 0%;
+}
+
+/* .heroBg::after{
+  content: "";
+  position: absolute;
+  height: 10vh;
+  width: 10vw;
+  background-color: red;
+
+} */
+
+/* .heroBg::after {
+  content: "";
+  background: linear-gradient(#2b090900, #fefefe30, #fefefea7, #e2e2e2), url("./assets/p1.png");
+  height: 50vh;
+  border: 2px solid red;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotate(30deg);
+} */
+
+/* .heroBg::after {
+  content: "";
+  position: absolute;
+  width: 300vw;
+  height: 50vw;
+  top: -50%;
+  left: -50%;
+  z-index: 50;
+  background: linear-gradient(#2b090900, #fefefe30, #fefefea7, #e2e2e2), url("./assets/p1.png") 0 0 no-repeat;
+  background-size: contain;
+  transform: rotate(30deg);
+} */
+
+.heroBg {
+  width: 100%;
+  height: 50vh;
+  background: linear-gradient(#2b090900, #fefefe30, #fefefea7, #F9FAFB), url("./assets/p1.png") 0 0 no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+
+.heroBg2 {
+  width: 100%;
+  height: 80vh;
+  /* border: 2px solid; */
+  background: linear-gradient(#2b090900, #fefefe30, #fefefea7, #F9FAFB), url("./assets/icon.png") 0 0 no-repeat;
+  background-size: contain;
+  
+  background-position: center;
+}
